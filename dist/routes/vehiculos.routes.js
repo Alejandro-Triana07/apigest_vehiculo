@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const vehiculos_controller_1 = require("../controllers/vehiculos.controller");
+const router = (0, express_1.Router)();
+const controller = new vehiculos_controller_1.VehiculosController();
+router.get("/vehicles", controller.obtenerTodos);
+router.get("/available-vehicles", controller.obtenerDisponibles);
+router.post("/vehicles", controller.agregarVehiculo);
+router.put("/vehicles", controller.reemplazarVehiculo);
+router.patch("/vehicles", controller.actualizarParcial);
+router.delete("/vehicles", controller.eliminarVehiculo);
+exports.default = router;
