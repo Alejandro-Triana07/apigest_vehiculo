@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { vehiculos } from "../data/vehiculos.data";
-import { Vehiculo } from "../models/vehiculo";
+import { Vehiculo } from "../models/Vehiculo";
 
 export class VehiculosController {
   obtenerTodos(req: Request, res: Response) {

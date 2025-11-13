@@ -1,4 +1,4 @@
-import { Vehiculo } from "../models/vehiculo";
+import { Vehiculo } from "../models/Vehiculo";
 
 
 export let vehiculos: Vehiculo[] = [
